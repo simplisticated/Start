@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "Start"
   s.version      = "1.0"
-  s.summary      = "Launch counter for iOS"
+  s.summary      = "Launch handler for iOS"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-Easy tool for counting number of app's launches.
+Tool that handles different things occurring on app launch.
                    DESC
 
   s.homepage     = "https://github.com/igormatyushkin014/Start"
@@ -40,7 +40,7 @@ Easy tool for counting number of app's launches.
   #
 
   #s.license      = "MIT"
-  s.license      = { :type => "MIT", :file => "LICENSE" }
+  s.license      = { :type => "Apache License, Version 2.0", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
