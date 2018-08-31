@@ -19,7 +19,7 @@
 
 ## At a Glance
 
-`Start` is a tool that handles app's launch.
+`Start` is a tool that handles different things occurring on app launch.
 
 ## How To Get Started
 
