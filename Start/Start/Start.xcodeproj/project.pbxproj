@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		6900A6142139CA60001E67E2 /* Start.h in Headers */ = {isa = PBXBuildFile; fileRef = 6900A6122139CA60001E67E2 /* Start.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6900A61C2139CABD001E67E2 /* LaunchCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6900A61B2139CABD001E67E2 /* LaunchCounter.swift */; };
-		6900A6212139CB64001E67E2 /* DefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6900A6202139CB64001E67E2 /* DefaultsManager.swift */; };
-		6900A6232139CCC2001E67E2 /* Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6900A6222139CCC2001E67E2 /* Start.swift */; };
+		6900A62A2139E456001E67E2 /* DefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6900A6252139E456001E67E2 /* DefaultsManager.swift */; };
+		6900A62B2139E456001E67E2 /* LaunchCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6900A6272139E456001E67E2 /* LaunchCounter.swift */; };
+		6900A62C2139E456001E67E2 /* Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6900A6292139E456001E67E2 /* Start.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6900A60F2139CA60001E67E2 /* Start.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Start.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6900A6122139CA60001E67E2 /* Start.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Start.h; sourceTree = "<group>"; };
 		6900A6132139CA60001E67E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6900A61B2139CABD001E67E2 /* LaunchCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCounter.swift; sourceTree = "<group>"; };
-		6900A6202139CB64001E67E2 /* DefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsManager.swift; sourceTree = "<group>"; };
-		6900A6222139CCC2001E67E2 /* Start.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Start.swift; sourceTree = "<group>"; };
+		6900A6252139E456001E67E2 /* DefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultsManager.swift; sourceTree = "<group>"; };
+		6900A6272139E456001E67E2 /* LaunchCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchCounter.swift; sourceTree = "<group>"; };
+		6900A6292139E456001E67E2 /* Start.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Start.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,12 +62,36 @@
 		6900A61A2139CA72001E67E2 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				6900A61B2139CABD001E67E2 /* LaunchCounter.swift */,
-				6900A6202139CB64001E67E2 /* DefaultsManager.swift */,
-				6900A6222139CCC2001E67E2 /* Start.swift */,
+				6900A6262139E456001E67E2 /* Engine */,
+				6900A6242139E456001E67E2 /* Store */,
+				6900A6282139E456001E67E2 /* Bridge */,
 			);
 			name = Source;
 			path = ../../../Source;
+			sourceTree = "<group>";
+		};
+		6900A6242139E456001E67E2 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				6900A6252139E456001E67E2 /* DefaultsManager.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		6900A6262139E456001E67E2 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				6900A6272139E456001E67E2 /* LaunchCounter.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		6900A6282139E456001E67E2 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				6900A6292139E456001E67E2 /* Start.swift */,
+			);
+			path = Bridge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +173,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6900A61C2139CABD001E67E2 /* LaunchCounter.swift in Sources */,
-				6900A6232139CCC2001E67E2 /* Start.swift in Sources */,
-				6900A6212139CB64001E67E2 /* DefaultsManager.swift in Sources */,
+				6900A62A2139E456001E67E2 /* DefaultsManager.swift in Sources */,
+				6900A62C2139E456001E67E2 /* Start.swift in Sources */,
+				6900A62B2139E456001E67E2 /* LaunchCounter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
