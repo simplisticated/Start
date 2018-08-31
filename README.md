@@ -37,7 +37,58 @@ or
 
 ## Usage
 
-The library is currently in development process. Documentation will be published soon.
+### Launch count
+
+In your `AppDelegate`, increment the number of launches stored by `Start` library:
+
+```swift
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    // ...
+    
+    Start.launches.increment()
+    
+    // ...
+    
+    return true
+}
+```
+
+Now you can retrieve number of app's launches:
+
+```swift
+let launchCount = Start.launches.count
+```
+
+It's very easy to check if the app is launched for the first time:
+
+```swift
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    // ...
+    
+    Start.launches.increment()
+    
+    // ...
+    
+    switch Start.launches.count {
+    case 1:
+        // The first launch
+        break
+    default:
+        // Not the first launch
+        break
+    }
+    
+    // ...
+    
+    return true
+}
+```
+
+Sometimes you might need to reset the number of launches:
+
+```swift
+Start.launches.reset()
+```
 
 ## License
 
