@@ -54,3 +54,13 @@ public final class LaunchCounter {
     // MARK: Private object methods
     
 }
+
+public extension LaunchCounter {
+    
+    public var isFirst: Bool {
+        get {
+            return DefaultsManager.shared.launchCount == 1
+        }
+    }
+    
+}
